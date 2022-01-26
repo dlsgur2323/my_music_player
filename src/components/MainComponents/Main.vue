@@ -36,14 +36,14 @@ import Article from "./Article.vue";
   }
   .main nav{
     box-sizing: border-box;
-    width: 10vw;
+    width: 200px;
     height: calc(100vh - 80px);
     background : rgba(0,0,0,1);
-    border-left: 1px solid rgb(32, 32, 32);
+    border-left: 0.5px solid rgb(32, 32, 32);
   }
   .main section{
     box-sizing: border-box;
-    width: 90vw;
+    width: calc(100vw - 200px);
     height: calc(100vh - 80px);
     background : rgba(0,0,0,1);
   }

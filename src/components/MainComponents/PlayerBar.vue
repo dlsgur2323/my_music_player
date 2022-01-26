@@ -1,9 +1,14 @@
 <template>
   <div class="player-bar">
+        <div class="play-bar">
+            <div class="circle"></div>
+        </div>
         <div class="info">
-            <div class="pic"></div>
+            <div class="pic">
+                <img src="../../assets/leave_it_all_behind.jpg" alt="">
+            </div>
             <div class="txt">
-                <p class="title">Leave it all behine</p>
+                <p class="title">Leave it all behind</p>
                 <p class="artist">John Splithoff</p>
             </div>
         </div>
@@ -49,6 +54,29 @@ export default {
 
 
 <style scoped>
+    .play-bar:hover{
+        height: 3px;
+    }
+    .play-bar{
+        background : rgb(255, 1, 99);
+        width : 50%;
+        position : absolute;
+        bottom : 8%;
+        left : 0px;
+        height : 2px;
+    }
+    .play-bar:hover .circle{
+        position: absolute;
+        bottom: -1.5px;
+        right: -1px;
+        width : 6px;
+        height: 6px;
+        background: rgb(255, 1, 99);
+        float: right;
+        border-radius: 4px;
+        border: 1px solid rgb(255, 54, 131);
+    }
+    
     a{
         text-decoration: none;
     }
@@ -116,6 +144,11 @@ export default {
         height: 100%;
         background: rgb(63, 59, 59);
         float: left;
+    }
+    .info .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .info .txt{
         margin-left: 10px;
