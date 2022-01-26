@@ -15,24 +15,30 @@
       <li>
         <ul class="menu-list">
           <li>
-            <a href="#" style="color:rgb(255, 54, 131); font-weight:bold;">NOW</a>
+            <a href="#" class="menu-now">NOW</a>
           </li>
           <li>
-            <a href="#">인기차트</a>
+            <a href="#" class="menu">인기차트</a>
           </li>
           <li>
-            <a href="#">최신곡</a>
+            <a href="#" class="menu">최신곡</a>
           </li>
           <li>
-            <a href="#">스테이션</a>
+            <a href="#" class="menu">스테이션</a>
           </li>
           <li>
-            <a href="#">매거진</a>
+            <a href="#" class="menu">매거진</a>
           </li>
         </ul>
       </li>
       <li>
-        서비스지원
+        <ul>
+          <li>
+            <a href="#">
+              이용권 구매
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -46,6 +52,9 @@
 
 <style scoped>
   a{
+    text-decoration: none;
+  }
+  a:visited{
     text-decoration: none;
   }
   .side-bar{
@@ -96,5 +105,15 @@
   .menu-list li a{
     font-size: 1.2rem;
     color: rgb(201, 201, 201);
+  }
+  .menu-list li a.menu:hover{
+    color : white;
+  }
+  .menu-list li a.menu-now:hover{
+    color:rgb(255, 108, 164);
+  }
+  .menu-list li a.menu-now{
+    color:rgb(255, 54, 131);
+    font-weight:bold;
   }
 </style>

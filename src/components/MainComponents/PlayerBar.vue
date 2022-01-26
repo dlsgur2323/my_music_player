@@ -18,7 +18,7 @@
                     <a href="#"><i class="fas fa-step-backward"></i></a>
                 </li>
                 <li>
-                    <a href="#" style="font-size:2.2rem;color:rgb(255, 1, 99);"><i class="fas fa-play"></i></a>
+                    <a href="#" style="font-size:2rem;color:rgb(255, 1, 99);"><i class="fas fa-play"></i></a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-step-forward"></i></a>
