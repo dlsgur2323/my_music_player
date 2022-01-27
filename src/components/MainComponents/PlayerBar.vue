@@ -67,7 +67,7 @@ export default {
     }
     .play-bar:hover .circle{
         position: absolute;
-        bottom: -1.5px;
+        bottom: -2px;
         right: -1px;
         width : 6px;
         height: 6px;

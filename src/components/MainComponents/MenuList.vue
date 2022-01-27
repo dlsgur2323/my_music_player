@@ -32,10 +32,15 @@
         </ul>
       </li>
       <li>
-        <ul>
+        <ul class="sub-menu-list">
           <li>
             <a href="#">
               이용권 구매
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              고객센터
             </a>
           </li>
         </ul>
@@ -115,5 +120,18 @@
   .menu-list li a.menu-now{
     color:rgb(255, 54, 131);
     font-weight:bold;
+  }
+  li a{
+    color: rgb(148, 148, 148);
+  }
+  li a:hover{
+    color: white;
+  }
+  .sub-menu-list {
+    margin: 40px 0px;
+    
+  }
+  .sub-menu-list li{
+    margin: 10px 0px;
   }
 </style>
