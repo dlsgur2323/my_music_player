@@ -1,6 +1,7 @@
 <template>
   <div class="player-bar">
         <div class="play-bar">
+            <div class="progress-bar"></div>
             <div class="circle"></div>
         </div>
         <div class="info">
@@ -58,17 +59,31 @@ export default {
         height: 3px;
     }
     .play-bar{
-        background : rgb(255, 1, 99);
-        width : 50%;
+        width : 100%;
         position : absolute;
         bottom : 8%;
         left : 0px;
+        height : 4px;
+    }
+    .play-bar .progress-bar{
+        background : rgb(255, 1, 99);
+        width : 50%;
+        position : absolute;
+        bottom : 0;
+        left : 0px;
         height : 2px;
     }
+    .play-bar:hover{
+        background : rgb(43, 43, 43);
+    }
+    .play-bar:hover .progress-bar{
+        height : 4px;
+    }
     .play-bar:hover .circle{
+        cursor: pointer;
         position: absolute;
         bottom: -2px;
-        right: -1px;
+        left: calc(50% - 3px);
         width : 6px;
         height: 6px;
         background: rgb(255, 1, 99);
