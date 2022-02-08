@@ -6,7 +6,7 @@
         </div>
         <div class="info">
             <div class="pic">
-                <img src="../../assets/leave_it_all_behind.jpg" alt="">
+                <img src="../../assets/images/leave_it_all_behind.jpg" alt="">
             </div>
             <div class="txt">
                 <p class="title">Leave it all behind</p>

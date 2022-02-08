@@ -9,10 +9,11 @@
     <div class="section-news">
       <div class="news-main">
         <div class="main-pic">
-          <img src="../../assets/John-Splithoff.jpg" alt="">
+          <img src="../../assets/images/John-Splithoff.jpg" alt="">
         </div>
         <div class="sub-pic">
-          <h2>John Splithoff</h2>
+          <h1>John Splithoff</h1>
+          <span style="color:rgb(140, 140, 140);font-weight:bold">새벽 감성 자극하는 John Splithoff의 신곡을 놓치지 마세요.</span>
         </div>
       </div>
     </div>
@@ -84,26 +85,19 @@ export default {
     height: 100%;
     width: 100%;
     display: flex;
+    border: 0.5px solid rgb(32, 32, 32);
   }
-  .section-news .news-main .sub-pic::before{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: url(../../assets/John-Splithoff.jpg);
-    filter: blur(30px);
-    content: "";
-    opacity: 0.5;
-  }
+
   .section-news .news-main .sub-pic{
     position: relative;
     height: 100%;
-    width : 60%;
+    width : 40%;
     color: white;
+    padding : 0px 20px;
+    box-sizing: border-box;
   }
   .section-news .news-main .main-pic{
-    width : 40%;
+    width : 60%;
   }
   .section-news .news-main .main-pic img{
     width: 100%;
