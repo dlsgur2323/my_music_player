@@ -18,4 +18,14 @@ export default {
     margin:0;
     overflow: hidden;
   }
+  img {
+    -webkit-user-drag: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:visited{
+    text-decoration: none;
+    color: unset;
+  }
 </style>

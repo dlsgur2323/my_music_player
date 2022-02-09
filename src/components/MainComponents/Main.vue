@@ -46,7 +46,17 @@ import Article from "./Article.vue";
     width: calc(100vw - 200px);
     height: calc(100vh - 80px);
     background : rgba(0,0,0,1);
+    overflow-y: scroll;
   }
+
+  .main section {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+  }
+  .main section::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera*/
+  }
+
   .main footer{
     box-sizing: border-box;
     width: 100vw;

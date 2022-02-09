@@ -55,9 +55,6 @@ export default {
 
 
 <style scoped>
-    .play-bar:hover{
-        height: 3px;
-    }
     .play-bar{
         width : 100%;
         /* position : absolute;

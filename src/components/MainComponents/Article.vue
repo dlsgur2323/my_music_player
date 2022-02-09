@@ -12,31 +12,94 @@
           <img src="../../assets/images/John-Splithoff.jpg" alt="">
         </div>
         <div class="sub-pic">
-          <h1>John Splithoff</h1>
-          <span style="color:rgb(140, 140, 140);font-weight:bold">새벽 감성 자극하는 John Splithoff의 신곡을 놓치지 마세요.</span>
+          <div class="sub-desc">
+            <h1 style="font-size:2.5rem">
+              New Album : All in
+              <br/>
+              John Splithoff
+            </h1>
+            <span style="color:rgb(200, 200, 200);">새벽 감성 자극하는 John Splithoff의 신곡을 놓치지 마세요.</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section-album">
-      <div class="news"></div>
-    </div>
+    <SectionAlbum v-bind:propsdata="recent"></SectionAlbum>
+    <SectionAlbum v-bind:propsdata="popular"></SectionAlbum>
   </div>
 </template>
 
 <script>
-export default {
+import SectionAlbum from './SectionAlbum.vue';
 
+export default {
+  components : {
+    SectionAlbum : SectionAlbum,
+  },
+  data : ()=>{
+    return {
+      recent : {
+        albumList : [
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          },
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          },
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          },
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          },
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          },
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          },
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          },
+        ],
+        sectionTitle : '최신 음악',
+      },
+      popular : {
+        albumList : [
+          {
+            title : 'Leave it all behind',
+            artist : 'John Splithoff',
+            picture : 'leave_it_all_behind.jpg',
+          }
+        ],
+        sectionTitle : '인기 음악',
+      }
+    }
+  },
 }
 </script>
 
 <style>
+
   .now{
     width: calc(100% - 100px);
     height: 100%;
     padding: 0px 50px;
-    overflow-y: auto;
-    overflow-x : hidden;
   }
+
   .top-side{
     width: 100%;
     height: 80px;
@@ -78,26 +141,44 @@ export default {
   .section-news{
     margin-top: 20px;
     width: 100%;
-    height: 40%;
+    height: 35%;
+    margin-bottom:35px;
   }
 
   .section-news .news-main{
     height: 100%;
     width: 100%;
     display: flex;
-    border: 0.5px solid rgb(32, 32, 32);
+  }
+  .section-news .sub-pic::before{
+    content: '';
+    background-image: url(../../assets/images/John-Splithoff.jpg);
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    left : -5%;
+    top : -5%;
+    position: absolute;
+    filter: blur(30px);
+    z-index: -1;
+    opacity: 0.4;
   }
 
+  .section-news .news-main .sub-pic .sub-desc{
+    z-index: 2;
+    padding : 0px 50px;
+  }
   .section-news .news-main .sub-pic{
     position: relative;
     height: 100%;
-    width : 40%;
+    width : 60%;
     color: white;
-    padding : 0px 20px;
     box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
   }
   .section-news .news-main .main-pic{
-    width : 60%;
+    width : 40%;
   }
   .section-news .news-main .main-pic img{
     width: 100%;
