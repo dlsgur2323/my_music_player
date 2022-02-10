@@ -31,4 +31,5 @@ export default {
     text-decoration: none;
     color: unset;
   }
+  
 </style>

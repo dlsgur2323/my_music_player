@@ -20,6 +20,27 @@
             "artistCode" : "artist_0000000001",
             "pic" : "pic_5.jpg",
             "release" : "2018.04.13"
+        },
+        {
+            "code" : "alb_0000000004",
+            "title" : "Raye",
+            "artistCode" : "artist_0000000001",
+            "pic" : "pic_5.jpg",
+            "release" : "2018.04.13"
+        },
+        {
+            "code" : "alb_0000000005",
+            "title" : "Raye",
+            "artistCode" : "artist_0000000001",
+            "pic" : "pic_5.jpg",
+            "release" : "2018.04.13"
+        },
+        {
+            "code" : "alb_0000000006",
+            "title" : "Raye",
+            "artistCode" : "artist_0000000001",
+            "pic" : "pic_5.jpg",
+            "release" : "2018.04.13"
         }
     ],
     "currNum" : "3",

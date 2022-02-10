@@ -12,7 +12,6 @@
 import Now from '@/components/MainComponents/Articles/Now.vue';
 import Chart from '@/components/MainComponents/Articles/Chart.vue';
 import Recent from '@/components/MainComponents/Articles/Recent.vue';
-
 export default {
   props : ['propsdata'],
   components : {

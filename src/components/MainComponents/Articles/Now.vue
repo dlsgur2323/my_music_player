@@ -18,7 +18,7 @@
       </div>
     </div>
     <SectionAlbum v-bind:propsdata="recent"></SectionAlbum>
-    <SectionAlbum v-bind:propsdata="popular"></SectionAlbum>
+    <!-- <SectionAlbum v-bind:propsdata="popular"></SectionAlbum> -->
   </div>
 </template>
 

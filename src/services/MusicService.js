@@ -17,8 +17,8 @@ var MusicService = {
             if(sort != ""){
                 if(sort == '0'){
                     list.sort((a,b)=>{
-                        if(a.release < b.release) return -1;
-                        if(a.release > b.release) return 1;
+                        if(a.release < b.release) return 1;
+                        if(a.release > b.release) return -1;
                         return 0;
                     })
                 }
