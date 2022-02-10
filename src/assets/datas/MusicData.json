@@ -1,0 +1,20 @@
+{
+    "list" : [
+        {
+            "code" : "music_0000000001",
+            "title" : "Make It Happen",
+            "artistCode" : "artist_0000000001",
+            "albumCode" : "alb_0000000001"
+        },
+        {
+            "code" : "music_0000000002",
+            "title" : "Fahrenheit",
+            "artistCode" : "artist_0000000001",
+            "albumCode" : "alb_0000000002"
+        }
+    ],
+    "currNum" : "2",
+    "nextNum" : "3",
+    "seq" : "music_",
+    "lpad" : 10
+}

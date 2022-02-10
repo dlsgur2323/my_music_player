@@ -1,10 +1,10 @@
 <template>
   <div class="main">
-    <section>
-      <Article></Article>
+    <section v-bind:id="articleData.menu">
+      <Article v-bind:propsdata="articleData"></Article>
     </section>
     <nav>
-      <MenuList></MenuList>
+      <MenuList v-bind:propsdata="menuData"></MenuList>
     </nav>
     <footer>
       <PlayerBar></PlayerBar>
@@ -17,11 +17,27 @@
 import MenuList from "./MenuList.vue";
 import PlayerBar from "./PlayerBar.vue";
 import Article from "./Article.vue";
+
   export default {
     components : {
       MenuList : MenuList,
       Article : Article,
       PlayerBar : PlayerBar,
+    },
+    data(){
+      return {
+        articleData : {
+          menu : 'now',
+        },
+        menuData : {
+          changeMenu : this.changeMenu
+        },
+      }
+    },
+    methods : {
+      changeMenu(menu){
+        this.articleData.menu = menu;
+      }
     }
   }
 </script>

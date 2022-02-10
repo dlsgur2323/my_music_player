@@ -3,9 +3,9 @@
       <h1 >{{ sectionTitle }}</h1>
       <div class="list" v-on:mousedown="listMouseDown" @mouseup="listMouseUp">
         <div class="album" v-for="(album, index) in albumList" :key="index">
-          <img :src="require(`@/assets/images/${album.picture}`)" alt="" >
+          <img :src="require(`@/assets/images/${album.pic}`)" alt="" >
           <p class="title" ><a href="">{{ album.title }}</a></p>
-          <p class="artist" ><a href="">{{ album.artist }}</a></p>
+          <p class="artist" ><a href="">{{ album.artist.name }}</a></p>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@ export default {
     .section-album .list .album{  
         margin-bottom:20px; 
         margin-right: 25px;
-        width:300px;
+        width:250px;
         display: inline-block;
     }
     .section-album .list .album img{  

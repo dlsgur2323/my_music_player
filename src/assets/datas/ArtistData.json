@@ -1,0 +1,12 @@
+{
+    "list" : [
+        {
+            "code" : "artist_0000000001",
+            "name" : "John Splithoff"
+        }
+    ],
+    "currNum" : "1",
+    "nextNum" : "2",
+    "seq" : "artist_",
+    "lpad" : 10
+}

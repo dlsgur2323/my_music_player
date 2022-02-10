@@ -6,7 +6,7 @@
   <div class="player-bar">
         <div class="info">
             <div class="pic">
-                <img src="../../assets/images/leave_it_all_behind.jpg" alt="">
+                <img src="../../assets/images/pic_2.jpg" alt="">
             </div>
             <div class="txt">
                 <p class="title">Leave it all behind</p>

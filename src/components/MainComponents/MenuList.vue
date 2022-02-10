@@ -15,19 +15,19 @@
       <li>
         <ul class="menu-list">
           <li>
-            <a href="#" class="menu-now">NOW</a>
+            <a href="#" @click="changeMenu('now')" v-bind:class="menu == 'now' ? 'menu on' : 'menu'" >NOW</a>
           </li>
           <li>
-            <a href="#" class="menu">인기차트</a>
+            <a href="#" @click="changeMenu('chart')" v-bind:class="menu == 'chart' ? 'menu on' : 'menu'" >인기차트</a>
           </li>
           <li>
-            <a href="#" class="menu">최신곡</a>
+            <a href="#" @click="changeMenu('recent')" v-bind:class="menu == 'recent' ? 'menu on' : 'menu'">최신곡</a>
           </li>
           <li>
-            <a href="#" class="menu">스테이션</a>
+            <a href="#" @click="changeMenu('station')" v-bind:class="menu == 'station' ? 'menu on' : 'menu'" >스테이션</a>
           </li>
           <li>
-            <a href="#" class="menu">매거진</a>
+            <a href="#" @click="changeMenu('mag')" v-bind:class="menu == 'mag' ? 'menu on' : 'menu'" >매거진</a>
           </li>
         </ul>
       </li>
@@ -51,7 +51,18 @@
 
 <script>
   export default {
-
+    props : ['propsdata'],
+    data(){
+      return {
+        menu : 'now'
+      }
+    },
+    methods : {
+      changeMenu(menu){
+        this.propsdata.changeMenu(menu);
+        this.menu = menu;
+      }
+    }
   }
 </script>
 
@@ -114,10 +125,10 @@
   .menu-list li a.menu:hover{
     color : white;
   }
-  .menu-list li a.menu-now:hover{
+  .menu-list li a.on:hover{
     color:rgb(255, 108, 164);
   }
-  .menu-list li a.menu-now{
+  .menu-list li a.on{
     color:rgb(255, 54, 131);
     font-weight:bold;
   }
