@@ -62,7 +62,7 @@ export default {
   .section-news{
     margin-top: 20px;
     width: 100%;
-    height: 35%;
+    height: 300px;
     margin-bottom:35px;
   }
 

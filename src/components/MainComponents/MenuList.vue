@@ -61,6 +61,7 @@
       changeMenu(menu){
         this.propsdata.changeMenu(menu);
         this.menu = menu;
+        this.$router.push(menu);
       }
     }
   }
@@ -76,7 +77,17 @@
   .side-bar{
     width: 100%;
     height: 100%;
+    overflow-y: auto;
   }
+
+  .side-bar{
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+  }
+  .side-bar::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera*/
+  }
+
   ul{
     list-style: none;
   }

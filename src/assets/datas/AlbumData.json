@@ -23,28 +23,28 @@
         },
         {
             "code" : "alb_0000000004",
-            "title" : "Raye",
-            "artistCode" : "artist_0000000001",
-            "pic" : "pic_5.jpg",
-            "release" : "2018.04.13"
+            "title" : "In The Lonely Hour",
+            "artistCode" : "artist_0000000002",
+            "pic" : "pic_7.jpg",
+            "release" : "2014.01.01"
         },
         {
             "code" : "alb_0000000005",
-            "title" : "Raye",
-            "artistCode" : "artist_0000000001",
-            "pic" : "pic_5.jpg",
-            "release" : "2018.04.13"
+            "title" : "The Thrill Of It All",
+            "artistCode" : "artist_0000000002",
+            "pic" : "pic_6.jpg",
+            "release" : "2017.11.03"
         },
         {
             "code" : "alb_0000000006",
-            "title" : "Raye",
-            "artistCode" : "artist_0000000001",
-            "pic" : "pic_5.jpg",
-            "release" : "2018.04.13"
+            "title" : "APARTMENT",
+            "artistCode" : "artist_0000000003",
+            "pic" : "pic_8.jpg",
+            "release" : "2017.12.12"
         }
     ],
-    "currNum" : "3",
-    "nextNum" : "4",
+    "currNum" : "6",
+    "nextNum" : "7",
     "seq" : "alb_",
     "lpad" : 10
 }

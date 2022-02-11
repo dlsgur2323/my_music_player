@@ -3,10 +3,18 @@
         {
             "code" : "artist_0000000001",
             "name" : "John Splithoff"
+        },
+        {
+            "code" : "artist_0000000002",
+            "name" : "Sam Smith"
+        },
+        {
+            "code" : "artist_0000000003",
+            "name" : "카더가든"
         }
     ],
-    "currNum" : "1",
-    "nextNum" : "2",
+    "currNum" : "3",
+    "nextNum" : "4",
     "seq" : "artist_",
     "lpad" : 10
 }

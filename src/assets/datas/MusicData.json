@@ -11,10 +11,40 @@
             "title" : "Fahrenheit",
             "artistCode" : "artist_0000000001",
             "albumCode" : "alb_0000000002"
+        },
+        {
+            "code" : "music_0000000003",
+            "title" : "Raye",
+            "artistCode" : "artist_0000000001",
+            "albumCode" : "alb_0000000003"
+        },
+        {
+            "code" : "music_0000000004",
+            "title" : "Leave It All Behind",
+            "artistCode" : "artist_0000000001",
+            "albumCode" : "alb_0000000001"
+        },
+        {
+            "code" : "music_0000000004",
+            "title" : "I'm Not The Only One",
+            "artistCode" : "artist_0000000002",
+            "albumCode" : "alb_0000000004"
+        },
+        {
+            "code" : "music_0000000004",
+            "title" : "Lay Me Down",
+            "artistCode" : "artist_0000000002",
+            "albumCode" : "alb_0000000004"
+        },
+        {
+            "code" : "music_0000000004",
+            "title" : "Too Good At GoodByes",
+            "artistCode" : "artist_0000000002",
+            "albumCode" : "alb_0000000005"
         }
     ],
-    "currNum" : "2",
-    "nextNum" : "3",
+    "currNum" : "4",
+    "nextNum" : "5",
     "seq" : "music_",
     "lpad" : 10
 }
